@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) {
 
-        MetodosOrdenamiento ordenador = new MetodosOrdenamiento();
+    /*      MetodosOrdenamiento ordenador = new MetodosOrdenamiento();
         int[] arregloBurbuja = { 34, 2, 10, 6, 7, 5, 1, 15 };
         int[] arregloSeleccion = { 34, 2, 10, 6, 7, 5, 1, 15 };
         int[] arregloInsercion = { 34, 2, 10, 6, 7, 5, 1, 15 };
@@ -76,7 +76,9 @@ public class App {
         ordenador.insercionTercero(arregloInsercion);
         System.out.println(
         "Resultado Insercion Metodo 3: " +
-        java.util.Arrays.toString(arregloInsercionOrdenado3));
-
+        java.util.Arrays.toString(arregloInsercionOrdenado3));*/
+        Benchmarking benchmarking = new Benchmarking();
+        
     }
+    
 }
