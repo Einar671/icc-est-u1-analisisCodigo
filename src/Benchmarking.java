@@ -10,9 +10,9 @@ public class Benchmarking {
 
         //System.out.println(inicioMillis);
         //System.out.println(inicioNano);
-        
+        System.out.println("inicio");
         metodosOrdenamiento = new MetodosOrdenamiento();
-        int[] arreglo = generarArregloAleatorio(1000000);
+        int[] arreglo = generarArregloAleatorio(10000);
         Runnable tarea = () -> metodosOrdenamiento.burbujaTradicional(arreglo);
         System.out.println("Tiempo en nanos: "+medirConNanoTime(tarea));
         System.out.println("Tiempo en mili: "+medirConCurrentTime(tarea));
