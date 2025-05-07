@@ -2,9 +2,10 @@
 from benchmarking import Benchmarking
 from metodos_ordenamiento import MetodosOrdenamiento
 import matplotlib.pyplot as plt
+import datetime
 
 if __name__ == "__main__":
-    print("Funciona")
+    print("Funciona")   
 
     # Instancias
     metodos = MetodosOrdenamiento()
@@ -37,7 +38,8 @@ if __name__ == "__main__":
     for tam, nombre, tiempo in resultados:
         tiempos_by_metodo[nombre].append(tiempo)
 
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(10, 6),num="Einar Kaalhus")
+
 
     
 
@@ -48,7 +50,12 @@ if __name__ == "__main__":
 
     plt.xlabel("Tamaño del Arreglo")
     plt.ylabel("Tiempo de Ejecución (segundos)")
-    plt.title("Tiempo de Ejecución de Métodos de Ordenamiento vs. Tamaño del Arreglo")
+
+    fecha_actual= datetime.datetime.now()
+    fecha_formateada=fecha_actual.strftime("%Y-%m-%d %H:%M:%S")
+   
+    titulo=f"Comparativa Métodos \n Einar Kaalhus -{fecha_formateada}"
+    plt.title(titulo)
     plt.legend() 
 
     plt.grid(True) 
